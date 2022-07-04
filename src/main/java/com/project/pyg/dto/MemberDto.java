@@ -25,4 +25,6 @@ public class MemberDto {
 
     private Timestamp created_date;
 
+    private String role;
+
 }

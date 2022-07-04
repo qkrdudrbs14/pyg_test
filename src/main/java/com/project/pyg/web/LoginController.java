@@ -18,7 +18,7 @@ public class LoginController {
     @Autowired
     private LoginServiceImpl loginService;
 
-    @GetMapping({"/","login"})
+    @GetMapping({"login"})
     public String moveLogin() {
         System.out.println("login");
         return "login";

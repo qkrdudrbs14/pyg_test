@@ -4,14 +4,39 @@
 <head>
 <title>영농형 태양광 모니터링</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="Solar Monitoring - DaeYeon C&amp;I">
-	<meta name="author" content="The Develovers">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
-	login.jsp
+	 <form method="post" id="frm" name="frm" class="form-horizontal">
+                    <dl>
+                        <dt>사용자 계정</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <label for="username" class="sr-only">Username</label>
+                                    <input type="text" id="username" name="username" placeholder="username" />
+                                    <span class="bg_i"><i class="fa fa-user fa-05x fa-lg"></i></span>
+                                </li>
+                                <li>
+                                    <label for="password" class="sr-only">password</label>
+                                    <input type="password" id="password" name="password" placeholder="password" />
+                                    <span class="bg_i"><i class="fa fa-lock fa-05x fa-lg"></i></span>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="error_m"></div>
+              		<input type="hidden"  name="${_csrf.parameterName}"  value="${_csrf.token}" />
+                    <button type="button" class="btn_login" id="btnLogin" onclick="validation_activity();"><span>Login</span></button>
+                </form>
+
+
+     <script type="text/javascript">
+        console.log("login.jsp");
+
+        function validation_activity(){
+            console.log("validation_activity");
+            document.frm.submit();
+        }
+     </script>
 </body>
 </html>

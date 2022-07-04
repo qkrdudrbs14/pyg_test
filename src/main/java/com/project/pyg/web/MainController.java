@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-    @GetMapping(value = "main")
-    public void moveMain(){
+    @GetMapping({"","main"})
+    public String moveMain(){
         System.out.println("main");
+        return "main";
     }
 }
