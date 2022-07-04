@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>영농형 태양광 모니터링</title>
+<title>login page</title>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -29,7 +29,7 @@
                     <button type="button" class="btn_login" id="btnLogin" onclick="validation_activity();"><span>Login</span></button>
                 </form>
 
-
+     <script src="/resources/js/login.js"></script>
      <script type="text/javascript">
         console.log("login.jsp");
 
