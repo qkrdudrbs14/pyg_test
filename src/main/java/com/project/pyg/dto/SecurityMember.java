@@ -19,7 +19,7 @@ public class SecurityMember extends User {
 
     public SecurityMember(MemberDto memberDto) {
 //        super(memberDto.getUserid(), memberDto.getPassword(), makeGrantedAuthority(memberDto.getRole()));
-        super(memberDto.getUserid(), memberDto.getPassword(), Arrays.asList(new SimpleGrantedAuthority(ROLE_PREFIX + memberDto.getRole())));
+        super(memberDto.getUser_id(), memberDto.getPassword(), Arrays.asList(new SimpleGrantedAuthority(ROLE_PREFIX + memberDto.getRole())));
     }
 
     /*

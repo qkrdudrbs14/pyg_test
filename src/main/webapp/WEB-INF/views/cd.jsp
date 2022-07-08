@@ -10,43 +10,40 @@
 	<meta name="author" content="The Develovers">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-	<meta name="_csrf" content="${_csrf.token}" />
-    <meta name="_csrf_header" content="${_csrf.headerName}" />
-
-    <!-- CSS -->
-    <link href="/resources/css/main.css" rel="stylesheet" type="text/css">
+	<!-- CSS -->
+    <link href="/resources/css/cd.css" rel="stylesheet" type="text/css">
     <link href="/resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/resources/css/daterangepicker.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
     <!-- header -->
     <jsp:include page="./include/header.jsp" flush="true">
-        <jsp:param name="active" value="1"/>
+        <jsp:param name="active" value="2"/>
     </jsp:include>
     <!--// header -->
 
     <div>
-        <p>main.jsp</p>
-         <p>이미지 업로드 테스트</p>
-    </div>
-    <div>
-        <form id="uploadForm" enctype="multipart/form-data">
-            <input type="file" id="fileInput" />
-        </form>
-        <input type="button" value="file upload" id="fileuploadBtn"/>
-    </div>
+        <p>cd.jsp</p>
+        <p>달력 테스트</p>
 
+        <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+        <div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+            <i class="fa fa-calendar"></i>&nbsp;
+            <span></span> <i class="fa fa-caret-down"></i>
+        </div>
+
+    </div>
 
 
 	<script src="/resources/js/core.min.js"></script>
     <script src="/resources/js/sha256.min.js"></script>
     <script src="/resources/js/jquery-3.6.0.js"></script>
+    <script src="/resources/js/moment.min.js"></script>
+    <script src="/resources/js/daterangepicker.min.js"></script>
     <script src="/resources/js/common.js"></script>
-    <script src="/resources/js/main.js"></script>
+    <script src="/resources/js/cd.js"></script>
 
-    <script type="text/javascript">
-        const token = $("meta[name='_csrf']").attr("content");
-        const header = $("meta[name='_csrf_header']").attr("content");
-    </script>
 </body>
 </html>

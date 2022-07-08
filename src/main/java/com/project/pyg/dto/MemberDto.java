@@ -17,13 +17,13 @@ import java.sql.Timestamp;
 public class MemberDto {
 
     @Id
-    private String userid;
+    private String user_id;
 
     private String username;
 
     private String password;
 
-    private Timestamp created_date;
+    private Timestamp created_on;
 
     private String role;
 

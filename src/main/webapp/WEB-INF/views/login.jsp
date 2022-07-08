@@ -29,14 +29,9 @@
                     <button type="button" class="btn_login" id="btnLogin" onclick="validation_activity();"><span>Login</span></button>
                 </form>
 
-     <script src="/resources/js/login.js"></script>
-     <script type="text/javascript">
-        console.log("login.jsp");
-
-        function validation_activity(){
-            console.log("validation_activity");
-            document.frm.submit();
-        }
-     </script>
+    <script src="/resources/js/core.min.js"></script>
+    <script src="/resources/js/sha256.min.js"></script>
+    <script src="/resources/js/jquery-3.6.0.js"></script>
+    <script src="/resources/js/login.js"></script>
 </body>
 </html>
