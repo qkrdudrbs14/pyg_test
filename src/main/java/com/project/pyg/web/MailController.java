@@ -8,9 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.mail.SimpleMailMessage;
 import org.springframework.core.io.FileSystemResource;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
@@ -44,9 +42,9 @@ public class MailController {
             MimeMessage mail = javaMailSender.createMimeMessage();
 
             MimeMessageHelper helper = new MimeMessageHelper(mail, true);
-            helper.setTo("parkpark14@dycni.com");
-            helper.setReplyTo("parkpark14@dycni.com");
-            helper.setFrom("parkpark14@naver.com");
+            helper.setTo("");
+            helper.setReplyTo("");
+            helper.setFrom("");
             helper.setSubject("mail send Test Test");
             helper.setText("mail send Test Test");
 
@@ -70,9 +68,9 @@ public class MailController {
             MimeMessage mail = javaMailSender.createMimeMessage();
 
             MimeMessageHelper helper = new MimeMessageHelper(mail, true);
-            helper.setTo("parkpark14@dycni.com");
-            helper.setReplyTo("parkpark14@dycni.com");
-            helper.setFrom("parkpark14@naver.com");
+            helper.setTo("");
+            helper.setReplyTo("");
+            helper.setFrom("");
             helper.setSubject("mail send Test Subject");
             helper.setText("mail send Test Text");
 
