@@ -32,8 +32,8 @@ public class MailController {
 
             /*
              SimpleMailMessage message = new SimpleMailMessage();
-             message.setFrom("parkpark14@naver.com");
-             message.setTo("parkpark14@dycni.com");
+             message.setFrom("");
+             message.setTo("");
              message.setSubject("mail send test Subject");
              message.setText("mail send Test Test");
              javaMailSender.send(message);
