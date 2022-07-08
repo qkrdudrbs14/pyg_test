@@ -34,8 +34,8 @@ public class MailController {
 
             /*
              SimpleMailMessage message = new SimpleMailMessage();
-             message.setFrom("parkpark14@naver.com");
-             message.setTo("parkpark14@dycni.com");
+             message.setFrom("");
+             message.setTo("");
              message.setSubject("mail send test Subject");
              message.setText("mail send Test Test");
              javaMailSender.send(message);
@@ -44,9 +44,9 @@ public class MailController {
             MimeMessage mail = javaMailSender.createMimeMessage();
 
             MimeMessageHelper helper = new MimeMessageHelper(mail, true);
-            helper.setTo("parkpark14@dycni.com");
-            helper.setReplyTo("parkpark14@dycni.com");
-            helper.setFrom("parkpark14@naver.com");
+            helper.setTo("");
+            helper.setReplyTo("");
+            helper.setFrom("");
             helper.setSubject("mail send Test Test");
             helper.setText("mail send Test Test");
 
@@ -70,9 +70,9 @@ public class MailController {
             MimeMessage mail = javaMailSender.createMimeMessage();
 
             MimeMessageHelper helper = new MimeMessageHelper(mail, true);
-            helper.setTo("parkpark14@dycni.com");
-            helper.setReplyTo("parkpark14@dycni.com");
-            helper.setFrom("parkpark14@naver.com");
+            helper.setTo("");
+            helper.setReplyTo("");
+            helper.setFrom("");
             helper.setSubject("mail send Test Subject");
             helper.setText("mail send Test Text");
 
