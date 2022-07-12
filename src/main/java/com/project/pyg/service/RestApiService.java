@@ -9,4 +9,8 @@ public interface RestApiService {
     public ArrayList<RestApiDto> getRestDataList();
 
     public RestApiDto getRestData(String user_id);
+
+    public int setRestData(RestApiDto restApiDto);
+
+    public int inRestData(RestApiDto restApiDto);
 }

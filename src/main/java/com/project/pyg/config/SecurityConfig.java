@@ -37,9 +37,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         log.info("security config");
 
         http.authorizeRequests()
-                .antMatchers("/login/**", "/resources/**").permitAll()
+                .antMatchers("/login/**", "/resources/**", "/restApi/**").permitAll()
                 .antMatchers("/**").hasAnyRole("ADMIN")
-                .anyRequest().authenticated();
+                .anyRequest().authenticated()
+                .and()
+                .csrf().disable()
+        ;
 //                .and().sessionManagement().maximumSessions(1).expiredUrl("/login").maxSessionsPreventsLogin(true);
 //                .and().sessionManagement().maximumSessions(1).expiredUrl("/login").maxSessionsPreventsLogin(false);
 

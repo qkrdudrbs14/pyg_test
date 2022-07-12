@@ -8,7 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.mail.SimpleMailMessage;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
@@ -32,8 +34,8 @@ public class MailController {
 
             /*
              SimpleMailMessage message = new SimpleMailMessage();
-             message.setFrom("");
-             message.setTo("");
+             message.setFrom("parkpark14@naver.com");
+             message.setTo("parkpark14@dycni.com");
              message.setSubject("mail send test Subject");
              message.setText("mail send Test Test");
              javaMailSender.send(message);
