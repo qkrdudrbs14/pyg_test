@@ -3,5 +3,6 @@
     <input type="button" value="main.jsp" id="mainBtn"/>
     <input type="button" value="cd.jsp" id="cdBtn"/>
     <input type="button" value="mail.jsp" id="mailBtn"/>
+    <input type="button" value="sound.jsp" id="soundBtn"/>
     <input type="button" value="logout" id="logoutBtn"/>
 </div>

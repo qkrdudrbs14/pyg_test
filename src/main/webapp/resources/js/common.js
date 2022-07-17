@@ -23,4 +23,9 @@ $(document).ready(() => {
         document.location.href ="/mail";
     });
 
+    $("#soundBtn")[0].addEventListener("click", () => {
+        console.log("soundBtn");
+        document.location.href ="/sound";
+    });
+
 });
