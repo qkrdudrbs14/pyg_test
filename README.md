@@ -42,3 +42,6 @@ values ('pyg','pyg','1234', now())
 
 insert into members(userid,username, password, created_date)
 values ('admin','pyg','1234', now())
+
+
+/swagger-ui.html
